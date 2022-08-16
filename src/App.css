@@ -1,3 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
 .App {
   width: 90%;
+  color: white;
+  font-size: 15px;
+  font-family: "DM Sans", sans-serif;
+}
+.main-photo {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.purple-overlay-box {
+  width: 90%;
+  height: 15.5rem;
+  position: absolute;
+  background-color: hsla(277, 100%, 25%, 0.5);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.first-sent {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  width: 80%;
+}
+.ins-word {
+  color: hsl(277, 64%, 61%);
 }

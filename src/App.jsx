@@ -7,9 +7,12 @@ import "./App.css";
 function App() {
   const [screenSize, setScreenSize] = useState(window.innerWidth);
   const MainContainer = styled.div`
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: hsl(244, 38%, 16%);
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     /* @media (max-width: ;); */
   `;
   return (
@@ -18,12 +21,18 @@ function App() {
         <img
           src={mobileImg}
           alt="peopleTalkingPurpleOverlay"
-          style={{ width: "90%" }}
+          className="main-photo"
         />
-        Get insights that help your business grow. Discover the benefits of data
-        analytics and make better decisions regarding revenue, customer
-        experience, and overall efficiency. 10k+ companies 314 templates 12m+
-        queries
+        <div className="purple-overlay-box"></div>
+        <p className="first-sent">
+          Get <span className="ins-word">insights</span> that help your business
+          grow.{" "}
+        </p>
+        <div style={{ width: "90%" }}>
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency. 10k+
+          companies 314 templates 12m+ queries
+        </div>
       </MainContainer>
     </div>
   );
